@@ -1,41 +1,49 @@
-// Year appearing in footer
+// Year in footer
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Mobile menu toggler
+// Mobile menu
 const hamburger = document.querySelector('.hamburger');
 const menu = document.querySelector('.menu');
-hamburger.addEventListener('click', () => {
-  const isOpen = menu.style.display === 'flex';
-  menu.style.display = isOpen ? 'none' : 'flex';
-  hamburger.setAttribute('aria-expanded', !isOpen);
-});
+if (hamburger && menu) {
+  hamburger.addEventListener('click', () => {
+    const open = menu.style.display === 'flex';
+    menu.style.display = open ? 'none' : 'flex';
+    hamburger.setAttribute('aria-expanded', String(!open));
+  });
+}
 
-// Lead modal toggler
+// Lead modal
 const leadModal = document.getElementById('leadModal');
 const openLead = document.getElementById('openLead');
-const closeLead = leadModal.querySelector('.modal-close');
-openLead.addEventListener('click', () => {
+const closeLead = leadModal?.querySelector('.modal-close');
+openLead?.addEventListener('click', () => {
   leadModal.classList.add('open');
   leadModal.setAttribute('aria-hidden', 'false');
 });
-closeLead.addEventListener('click', () => {
+closeLead?.addEventListener('click', () => {
   leadModal.classList.remove('open');
   leadModal.setAttribute('aria-hidden', 'true');
 });
-leadModal.addEventListener('click', (e) => {
+leadModal?.addEventListener('click', (e) => {
   if (e.target === leadModal) {
     leadModal.classList.remove('open');
     leadModal.setAttribute('aria-hidden', 'true');
   }
 });
 
-// Theme toggle button logic
+// Dark/light mode
 const themeToggle = document.getElementById('themeToggle');
-themeToggle.addEventListener('click', () => {
-  const isLight = document.body.classList.toggle('light-mode');
-  themeToggle.textContent = isLight ? '🌞' : '🌙';
+themeToggle.addEventListener('click', function () {
+  const body = document.body;
+  if (body.classList.contains('light-mode')) {
+    body.classList.remove('light-mode');
+    themeToggle.textContent = '🌙';
+  } else {
+    body.classList.add('light-mode');
+    themeToggle.textContent = '🌞';
+  }
 });
-  
+
 // Smooth scroll for internal links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', e => {
