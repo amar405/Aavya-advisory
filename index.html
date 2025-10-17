@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Aavya Advisory — Finance, Strategy, Compliance</title>
-  <meta name="description" content="Aavya Advisory helps growth-focused businesses with finance, strategy, tax, and compliance." />
+  <title>Aavya Advisory — Tax, Finance, Growth</title>
+  <meta name="description" content="Helping entrepreneurs and startups achieve financial clarity with expert compliance, audit, and strategy." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>Ⓐ</text></svg>">
 </head>
@@ -15,232 +15,173 @@
   <header class="site-header">
     <div class="container nav">
       <a class="brand" href="#home">
-        <span class="brand-mark">A</span>
-        <span class="brand-text">Aavya Advisory</span>
+        <span class="brand-mark">A</span><span class="brand-text">Aavya Advisory</span>
       </a>
-      <nav class="menu">
+      <nav class="menu" role="navigation">
         <a href="#services">Services</a>
         <a href="#industries">Industries</a>
         <a href="#cases">Case Studies</a>
         <a href="#team">Team</a>
         <a href="#contact" class="btn btn-sm btn-primary">Book a call</a>
       </nav>
+      <button id="themeToggle" aria-label="Toggle dark/light mode" class="theme-toggle-btn">🌙</button>
       <button class="hamburger" aria-label="Menu" aria-expanded="false">☰</button>
     </div>
   </header>
 
-  <section id="home" class="hero">
-    <div class="container hero-grid">
-      <div class="hero-copy">
-        <h1>Finance. Strategy. Compliance.</h1>
-        <p>Partnering with ambitious companies to unlock measurable growth through rigorous financial discipline, regulatory confidence, and data‑driven strategy.</p>
-        <div class="cta-row">
-          <a href="#contact" class="btn btn-primary">Schedule consultation</a>
-          <button class="btn btn-outline" id="openLead">Get a proposal</button>
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Tax. Finance. Growth. Simplified.</h1>
+          <p>We help ambitious entrepreneurs, startups, and professionals achieve clarity and control over their finances through expert-driven compliance, audit, and strategy solutions.</p>
+          <div class="cta-row">
+            <a href="#contact" class="btn btn-primary">Schedule a Consultation</a>
+            <button class="btn btn-outline" id="openLead">Get a Proposal</button>
+          </div>
+          <ul class="trust">
+            <li>💼 ₹75+ Cr client assets managed</li>
+            <li>🕓 10+ Years combined experience</li>
+            <li>💬 99% client retention</li>
+            <li>⚡ 24–48 hr turnaround for most filings</li>
+          </ul>
         </div>
-        <ul class="trust">
-          <li>Trusted by 120+ clients</li>
-          <li>Avg. ROI uplift 12–18%</li>
-          <li>On‑time compliance rate 99.4%</li>
-        </ul>
-      </div>
-      <div class="hero-card">
-        <div class="kpi">
-          <div class="kpi-num">₹850Cr+</div>
-          <div class="kpi-label">AUM advised</div>
-        </div>
-        <div class="kpi">
-          <div class="kpi-num">7+ yrs</div>
-          <div class="kpi-label">Avg. client tenure</div>
-        </div>
-        <div class="kpi">
-          <div class="kpi-num">48 hrs</div>
-          <div class="kpi-label">Proposal turnaround</div>
+        <div class="hero-card">
+          <!-- Add subtle gradient & faint business team image in CSS background -->
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="services" class="section">
-    <div class="container">
-      <h2>Advisory services</h2>
-      <p class="section-intro">Clear outcomes, senior execution, and transparent pricing across core financial, strategic, and regulatory services.</p>
-      <div class="cards">
-        <article class="card">
-          <h3>FP&amp;A and CFO Suite</h3>
-          <p>Rolling forecasts, variance analysis, board packs, and cash runway modeling for decision‑ready finance.</p>
-          <ul>
-            <li>Monthly FP&amp;A cadence</li>
-            <li>Unit economics deep‑dive</li>
-            <li>Board and investor reporting</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3>Tax and Compliance</h3>
-          <p>GST/Direct tax planning, filings, audits, and end‑to‑end risk controls aligned to latest regulations.</p>
-          <ul>
-            <li>GST and TDS workflows</li>
-            <li>Policy and SOP design</li>
-            <li>Regulatory liaison</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3>Deals and Valuation</h3>
-          <p>Buy‑side diligence, valuations, financial modeling, and post‑merger integration playbooks.</p>
-          <ul>
-            <li>DCF and comps models</li>
-            <li>Quality of earnings</li>
-            <li>Synergy tracking</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3>Data and Automation</h3>
-          <p>Dashboards, Python automation, and workflow orchestration to modernize finance operations.</p>
-          <ul>
-            <li>BI dashboards</li>
-            <li>Close automation</li>
-            <li>API integrations</li>
-          </ul>
-        </article>
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Advisory Services</h2>
+        <p class="section-intro">Clear outcomes, senior execution & transparent pricing.</p>
+        <div class="cards four-grid">
+          <article class="card">
+            <h3>Business & CFO Solutions</h3>
+            <p>Helping businesses make financial decisions with data-driven insight and clarity.</p>
+            <ul>
+              <li>Monthly management reports & projections</li>
+              <li>Budget vs actual variance analysis</li>
+              <li>Cash flow & profitability dashboards</li>
+              <li>Financial planning & cost optimization</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Taxation & Compliance</h3>
+            <p>Simplifying the complex world of direct and indirect taxes.</p>
+            <ul>
+              <li>GST registration, filing, and reconciliation</li>
+              <li>Income tax return filing & advisory</li>
+              <li>Tax planning & assessment representation</li>
+              <li>Audit support and risk review</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Audit & Assurance</h3>
+            <p>Providing credibility and compliance through independent review.</p>
+            <ul>
+              <li>Statutory, internal, and tax audits</li>
+              <li>Due diligence reports</li>
+              <li>Risk assessment & control evaluation</li>
+              <li>Accounting system reviews</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Data & Automation</h3>
+            <p>Leveraging Python and modern tools to automate and visualize financial operations.</p>
+            <ul>
+              <li>GST reconciliation automation</li>
+              <li>AIS/26AS auto-download scripts</li>
+              <li>Financial dashboards in Power BI</li>
+              <li>API integration for compliance workflows</li>
+            </ul>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="industries" class="section alt">
-    <div class="container">
-      <h2>Industries</h2>
-      <p class="section-intro">Experience spanning SaaS, manufacturing, D2C, professional services, and regulated sectors.</p>
-      <div class="pill-row">
-        <span class="pill">SaaS</span>
-        <span class="pill">Manufacturing</span>
-        <span class="pill">D2C & Retail</span>
-        <span class="pill">Fintech</span>
-        <span class="pill">Healthcare</span>
-        <span class="pill">Professional Services</span>
+    <section id="industries" class="section alt">
+      <div class="container">
+        <h2>Industries We Serve</h2>
+        <p class="section-intro">Our team brings expertise across diverse industries:</p>
+        <div class="pill-row">
+          <span class="pill">Startups & MSMEs</span>
+          <span class="pill">Manufacturing & Trading</span>
+          <span class="pill">Real Estate & Construction</span>
+          <span class="pill">E-commerce & Retail</span>
+          <span class="pill">Financial Services</span>
+          <span class="pill">Charitable Trusts / NGOs</span>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="cases" class="section">
-    <div class="container">
-      <h2>Case studies</h2>
-      <p class="section-intro">Selected outcomes that demonstrate measurable value creation.</p>
-      <div class="cases">
-        <article class="case">
-          <h3>SaaS GTM alignment</h3>
-          <p>Rebuilt cohort economics and pricing; net revenue retention improved from 96% to 108% in 9 months.</p>
-          <ul>
-            <li>Pricing experiments</li>
-            <li>Churn diagnostics</li>
-            <li>Sales capacity model</li>
-          </ul>
-        </article>
-        <article class="case">
-          <h3>GST workflow overhaul</h3>
-          <p>Automated reconciliations and filings; compliance cycle time reduced by 62% and penalties eliminated.</p>
-          <ul>
-            <li>Data pipeline</li>
-            <li>Exception dashboards</li>
-            <li>Auto‑submission</li>
-          </ul>
-        </article>
-        <article class="case">
-          <h3>Working capital unlock</h3>
-          <p>Optimized credit terms and inventory policies; freed ₹14.7Cr cash and trimmed DSO by 18 days.</p>
-          <ul>
-            <li>ABC/XYZ analysis</li>
-            <li>Collections playbook</li>
-            <li>Supplier scorecards</li>
-          </ul>
-        </article>
+    <section id="team" class="section">
+      <div class="container">
+        <h2>Our Team</h2>
+        <p class="section-intro">The professionals behind Aavya Advisory.</p>
+        <div class="team">
+          <article class="member">
+            <div class="avatar">AP</div>
+            <h3>CA Amar Pandit</h3>
+            <p>Specializes in Direct & Indirect Taxation, Audit, and Business Advisory. Known for simplifying complex financial challenges into actionable insights.</p>
+          </article>
+          <article class="member">
+            <div class="avatar">AJ</div>
+            <h3>CA Ajit Pandey</h3>
+            <p>Expertise in Business Registrations, Tax Structuring, and Process Compliance. Brings a hands-on approach to client solutions.</p>
+          </article>
+          <article class="member">
+            <div class="avatar">VG</div>
+            <h3>CFA (Cleared) Vaibhav Gupta</h3>
+            <p>Focused on Financial Modeling, Valuation, and Strategic Analysis. Adds data-driven decision support to every engagement.</p>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section alt">
-    <div class="container">
-      <h2>Testimonials</h2>
-      <p class="section-intro">What growth‑stage founders and finance leaders say.</p>
-      <div class="testimonials">
-        <blockquote>
-          <p>“The board finally gets crisp, decision‑ready numbers. Forecast accuracy jumped within one quarter.”</p>
-          <cite>— CFO, SaaS scale‑up</cite>
-        </blockquote>
-        <blockquote>
-          <p>“Our GST and direct tax posture is proactive now. Zero penalties since the overhaul.”</p>
-          <cite>— Founder, D2C brand</cite>
-        </blockquote>
-        <blockquote>
-          <p>“Valuation work was bulletproof in diligence. Integration plan saved months.”</p>
-          <cite>— CEO, Manufacturing</cite>
-        </blockquote>
-      </div>
-    </div>
-  </section>
-
-  <section id="team" class="section">
-    <div class="container">
-      <h2>Leadership</h2>
-      <p class="section-intro">Senior advisory bench with deep finance, tax, and analytics experience.</p>
-      <div class="team">
-        <article class="member">
-          <div class="avatar">AK</div>
-          <h3>A. Kumar</h3>
-          <p>Managing Partner — FP&amp;A, deals, and growth strategy.</p>
-        </article>
-        <article class="member">
-          <div class="avatar">SP</div>
-          <h3>S. Patel</h3>
-          <p>Partner, Tax and Compliance — GST, direct tax, audits.</p>
-        </article>
-        <article class="member">
-          <div class="avatar">RM</div>
-          <h3>R. Mehta</h3>
-          <p>Director, Data — BI, automation, and ops excellence.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="section alt">
-    <div class="container">
-      <h2>Contact</h2>
-      <p class="section-intro">Tell us about your goals; receive a tailored plan within 48 hours.</p>
-      <form class="contact-form" name="contact" method="post" data-netlify="true">
-        <input type="hidden" name="form-name" value="contact" />
-        <div class="grid-2">
-          <label>Full name
-            <input type="text" name="name" required />
+    <section id="contact" class="section alt">
+      <div class="container">
+        <h2>Let’s Build Financial Confidence Together</h2>
+        <p>Whether you’re launching a startup, managing growth, or streamlining compliance — Aavya Advisory is your trusted financial partner.</p>
+        <p><strong>📍 Based in India</strong> — serving clients across all states remotely and onsite.</p>
+        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <input type="hidden" name="_captcha" value="false" />
+          <div class="grid-2">
+            <label>Full name
+              <input type="text" name="name" required />
+            </label>
+            <label>Email
+              <input type="email" name="email" required />
+            </label>
+            <label>Company
+              <input type="text" name="company" />
+            </label>
+            <label>Phone
+              <input type="tel" name="phone" />
+            </label>
+          </div>
+          <label>What do you need help with?
+            <select name="need">
+              <option>Business & CFO Solutions</option>
+              <option>Taxation & Compliance</option>
+              <option>Audit & Assurance</option>
+              <option>Data & Automation</option>
+            </select>
           </label>
-          <label>Email
-            <input type="email" name="email" required />
+          <label>Message
+            <textarea name="message" rows="5" placeholder="Describe your current challenges and outcomes desired..."></textarea>
           </label>
-          <label>Company
-            <input type="text" name="company" />
-          </label>
-          <label>Phone
-            <input type="tel" name="phone" />
-          </label>
+          <button type="submit" class="btn btn-primary">📅 Schedule Consultation</button>
+        </form>
+        <div class="contact-meta">
+          <p>Email: <a href="mailto:contact@aavyaadvisory.in">contact@aavyaadvisory.in</a></p>
+          <p>Office: Mumbai • Pune • Remote</p>
         </div>
-        <label>What do you need help with?
-          <select name="need">
-            <option>FP&A and CFO</option>
-            <option>Tax and Compliance</option>
-            <option>Deals and Valuation</option>
-            <option>Data and Automation</option>
-          </select>
-        </label>
-        <label>Message
-          <textarea name="message" rows="5" placeholder="Describe your current challenges and outcomes desired..."></textarea>
-        </label>
-        <button type="submit" class="btn btn-primary">Send message</button>
-      </form>
-      <div class="contact-meta">
-        <p>Email: hello@aavyaadvisory.com</p>
-        <p>Office: Mumbai • Pune • Remote</p>
       </div>
-    </div>
-  </section>
+    </section>
+
+  </main>
 
   <footer class="site-footer">
     <div class="container footer-grid">
