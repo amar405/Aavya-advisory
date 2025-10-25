@@ -1,34 +1,37 @@
-// Theme Toggle
-const themeToggle = document.getElementById('themeToggle');
+// Theme Toggle (works for both footer and sidebar)
+const sidebarThemeToggle = document.getElementById('sidebarThemeToggle');
 const themeIcon = document.querySelector('.theme-icon');
-const themeLabel = document.querySelector('.theme-label');
+const themeText = document.querySelector('.theme-text');
 
 // Check if user previously selected dark mode
 const currentTheme = localStorage.getItem('theme');
 if (currentTheme === 'dark') {
   document.body.classList.remove('light-mode');
   document.body.classList.add('dark-mode');
-  themeIcon.textContent = '☀️';
-  themeLabel.textContent = 'Light Mode';
+  if (themeIcon) themeIcon.textContent = '☀️';
+  if (themeText) themeText.textContent = 'Light Mode';
 }
 
-themeToggle.addEventListener('click', function () {
-  const isDark = document.body.classList.contains('dark-mode');
-  
-  if (isDark) {
-    document.body.classList.remove('dark-mode');
-    document.body.classList.add('light-mode');
-    themeIcon.textContent = '🌙';
-    themeLabel.textContent = 'Dark Mode';
-    localStorage.setItem('theme', 'light');
-  } else {
-    document.body.classList.remove('light-mode');
-    document.body.classList.add('dark-mode');
-    themeIcon.textContent = '☀️';
-    themeLabel.textContent = 'Light Mode';
-    localStorage.setItem('theme', 'dark');
-  }
-});
+// Sidebar theme toggle
+if (sidebarThemeToggle) {
+  sidebarThemeToggle.addEventListener('click', function () {
+    const isDark = document.body.classList.contains('dark-mode');
+    
+    if (isDark) {
+      document.body.classList.remove('dark-mode');
+      document.body.classList.add('light-mode');
+      themeIcon.textContent = '🌙';
+      themeText.textContent = 'Dark Mode';
+      localStorage.setItem('theme', 'light');
+    } else {
+      document.body.classList.remove('light-mode');
+      document.body.classList.add('dark-mode');
+      themeIcon.textContent = '☀️';
+      themeText.textContent = 'Light Mode';
+      localStorage.setItem('theme', 'dark');
+    }
+  });
+}
 
 // View More / View Less buttons for services
 const viewMoreButtons = document.querySelectorAll('.view-more-btn');
@@ -78,3 +81,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+// Sidebar newsletter form
+const newsletterForm = document.querySelector('.sidebar-newsletter');
+if (newsletterForm) {
+  newsletterForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const email = this.querySelector('input[type="email"]').value;
+    alert('Thank you for subscribing! We will send updates to: ' + email);
+    this.reset();
+  });
+}
